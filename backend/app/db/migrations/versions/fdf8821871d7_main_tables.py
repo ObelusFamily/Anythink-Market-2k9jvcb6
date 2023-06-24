@@ -60,6 +60,7 @@ def create_users_table() -> None:
         sa.Column("hashed_password", sa.Text),
         sa.Column("bio", sa.Text, nullable=False, server_default=""),
         sa.Column("image", sa.Text),
+        sa.Column("isVerified", sa.bool, nullable=False, server_default=False)
         *timestamps(),
     )
     op.execute(
