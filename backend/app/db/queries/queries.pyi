@@ -34,7 +34,8 @@ class UsersQueriesMixin:
         new_salt: str,
         new_password: str,
         new_bio: Optional[str],
-        new_image: Optional[str]
+        new_image: Optional[str],
+        new_is_verified: Optional[bool],
     ) -> Record: ...
 
 class ProfilesQueriesMixin:
